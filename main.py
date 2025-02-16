@@ -323,7 +323,7 @@ def save_max_score(hero_type, score):
 
     scores[hero_type] = max(scores.get(hero_type, 0), score)
 
-    with open("results.txt", "w") as file:
+    with open("data/results.txt", "w") as file:
         for key, value in scores.items():
             file.write(f"{key}:{value}\n")
 
